@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy Policy for ScreenshotMemory, an Android-first app designed to process screenshots locally on your device.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#151514">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ScreenshotMemory Privacy Policy">
+    <meta property="og:description" content="How ScreenshotMemory handles screenshots and related information.">
+    <title>Privacy Policy — ScreenshotMemory</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="wordmark" href="../" aria-label="ScreenshotMemory home">ScreenshotMemory</a>
+        <div class="nav-links">
+          <a href="./" aria-current="page">Privacy</a>
+          <a href="../support/">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header class="page-header container">
+        <p class="eyebrow">ScreenshotMemory</p>
+        <h1>ScreenshotMemory Privacy Policy</h1>
+      </header>
+
+      <article class="prose container">
+        <section>
+          <p><strong>Last updated: September 20, 2026</strong></p>
+          <p>ScreenshotMemory is published by <strong>R4V3N Development</strong>. Privacy questions and support requests can be sent to <a href="mailto:r4v3n.development@gmail.com">r4v3n.development@gmail.com</a>.</p>
+          <p>ScreenshotMemory is a general-purpose screenshot organization and resurfacing utility.</p>
+        </section>
+
+        <section>
+          <h2>Information processed on your device</h2>
+          <p>When you grant photo access, ScreenshotMemory reads the device media-library information needed to discover screenshots. For screenshots it keeps in its local library, the app stores information such as the media-library asset identifier and URI, filename, dates, OCR text, category and classification confidence, and resurfacing state and schedule. It also stores app preferences, including notification and quiet-hours preferences, locally.</p>
+          <p>OCR and screenshot classification run on the device. The app uses a local SQLite database for its library and memory data. ScreenshotMemory does not require an account and has no ScreenshotMemory backend or cloud synchronization. The Android app declares internet capability, but ScreenshotMemory does not use it to send screenshots, OCR text, search queries, or library metadata to R4V3N Development or an analytics or advertising service. If you choose to open the privacy or support website, Android opens the link in a browser and that browser connects to the website. Android and device backup features, if enabled by you or your device provider, are controlled by those system settings and are outside ScreenshotMemory's own synchronization features.</p>
+        </section>
+
+        <section>
+          <h2>Notifications and background work</h2>
+          <p>If enabled, notifications are scheduled locally on your device. Background work checks for newly available screenshots using Android's local background-work facilities. These functions do not send screenshot content or OCR text to a server. Notification delivery and background execution are subject to Android settings and operating-system behavior.</p>
+        </section>
+
+        <section>
+          <h2>Optional classification review export</h2>
+          <p>Settings includes a developer diagnostics area that can be unlocked by repeatedly tapping the app version. Its classification review export is not part of ordinary screenshot resurfacing. If someone explicitly uses that control, ScreenshotMemory can create a ZIP containing a sample of up to 100 screenshots (with a combined image-size limit of 20 MiB) and a metadata file. The metadata can include OCR text, filenames, media identifiers, dates, categories, and classification confidence. The export is offered through Android's Sharesheet only after the user starts the export, so the user can select the destination app. ScreenshotMemory does not choose that recipient or receive a copy back. The temporary export is stored in the app cache and stale exports are eligible for cleanup after 24 hours. The receiving app's own privacy practices apply after the user shares the archive.</p>
+        </section>
+
+        <section>
+          <h2>Deletion and retention</h2>
+          <p>ScreenshotMemory keeps its local library and preferences while its app data remains on the device. You can remove local app data through Android's app storage controls or by uninstalling the app. Forgetting a memory only removes it from resurfacing; it does not delete the original image. The Library's delete action asks Android to delete the selected screenshot from the device media library and may require system confirmation. Temporary classification review exports are stored in the app cache and are eligible for cleanup after 24 hours.</p>
+        </section>
+
+        <section>
+          <h2>Sharing and third parties</h2>
+          <p>ScreenshotMemory does not include advertising, analytics, tracking, accounts, a ScreenshotMemory cloud service, or a push-notification backend. If you choose to share a classification review export, the destination app or service you select handles the shared copy under its own terms and privacy policy. This policy does not describe Android's own operating-system services or other apps on your device.</p>
+        </section>
+
+        <section>
+          <h2>Changes and contact</h2>
+          <p>If this policy changes, the updated version will be published at this address with a revised update date. For privacy questions or support, contact <strong>R4V3N Development</strong> at <a href="mailto:r4v3n.development@gmail.com">r4v3n.development@gmail.com</a>.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-links">
+          <a href="./">Privacy Policy</a>
+          <a href="../support/">Support</a>
+        </div>
+        <p>© 2026 R4V3N Development</p>
+      </div>
+    </footer>
+  </body>
+</html>
