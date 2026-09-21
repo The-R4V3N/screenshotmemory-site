@@ -1,8 +1,8 @@
 # Product assets
 
-No official ScreenshotMemory icon or application screenshots were present when this site was created.
+`icon.png` is the official ScreenshotMemory app icon supplied for this website.
 
-- Add the approved product icon as `assets/icon.png` when available.
-- Add only approved, current product screenshots under `assets/screenshots/` when they are ready for public use.
+- `favicon.png` is a 48×48 PNG derived from the official icon.
+- `apple-touch-icon.png` is a 180×180 PNG derived from the official icon.
 
-The v1 site deliberately does not reference an icon or screenshots, so it remains complete without fabricated brand or product imagery.
+The website does not use application screenshots.
