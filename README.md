@@ -32,6 +32,6 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000/`. No dependency installation is required.
 
-## Before public release
+## Content maintenance
 
-Replace the owner-review notices in the Privacy Policy and Support page with the confirmed Android permission details and an approved public support contact method. Add only official, approved product assets.
+Add only official, approved product assets when they are available.

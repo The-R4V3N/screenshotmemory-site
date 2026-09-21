@@ -27,69 +27,45 @@
     <main id="main-content">
       <header class="page-header container">
         <p class="eyebrow">ScreenshotMemory</p>
-        <h1>Privacy Policy</h1>
-        <p>ScreenshotMemory is designed to help you remember useful screenshots while keeping their processing on your device.</p>
+        <h1>ScreenshotMemory Privacy Policy</h1>
       </header>
 
       <article class="prose container">
         <section>
-          <h2>Summary</h2>
-          <p>ScreenshotMemory is an Android-first mobile app that discovers screenshots on your device, processes their contents locally, and may resurface them when they could be useful. It does not require an account, cloud synchronization, advertising, or analytics/tracking SDKs.</p>
-          <p>Screenshots and OCR text are not uploaded to external services as part of ScreenshotMemory’s core operation.</p>
+          <p><strong>Last updated: September 20, 2026</strong></p>
+          <p>ScreenshotMemory is published by <strong>R4V3N Development</strong>. Privacy questions and support requests can be sent to <a href="mailto:r4v3n.development@gmail.com">r4v3n.development@gmail.com</a>.</p>
+          <p>ScreenshotMemory is a general-purpose screenshot organization and resurfacing utility.</p>
         </section>
 
         <section>
-          <h2>Screenshot and media access</h2>
-          <p>ScreenshotMemory needs access to relevant media on your device in order to discover screenshots. The app uses that access to identify screenshots available on the device; it is not intended to upload those screenshots to a cloud service.</p>
-          <p>Whether the app can access a particular screenshot also depends on the Android version, the permission you grant, and whether the file remains on your device.</p>
+          <h2>Information processed on your device</h2>
+          <p>When you grant photo access, ScreenshotMemory reads the device media-library information needed to discover screenshots. For screenshots it keeps in its local library, the app stores information such as the media-library asset identifier and URI, filename, dates, OCR text, category and classification confidence, and resurfacing state and schedule. It also stores app preferences, including notification and quiet-hours preferences, locally.</p>
+          <p>OCR and screenshot classification run on the device. The app uses a local SQLite database for its library and memory data. ScreenshotMemory does not require an account and has no ScreenshotMemory backend or cloud synchronization. The Android app declares internet capability, but ScreenshotMemory does not use it to send screenshots, OCR text, search queries, or library metadata to R4V3N Development or an analytics or advertising service. If you choose to open the privacy or support website, Android opens the link in a browser and that browser connects to the website. Android and device backup features, if enabled by you or your device provider, are controlled by those system settings and are outside ScreenshotMemory's own synchronization features.</p>
         </section>
 
         <section>
-          <h2>On-device processing and local storage</h2>
-          <p>ScreenshotMemory uses on-device OCR to understand text in screenshots. This processing is performed locally. Information the app needs to operate—such as its local understanding of screenshots and app settings—is stored locally on your device.</p>
-          <p>ScreenshotMemory does not upload screenshots or OCR text to external services, and it does not provide cloud synchronization.</p>
+          <h2>Notifications and background work</h2>
+          <p>If enabled, notifications are scheduled locally on your device. Background work checks for newly available screenshots using Android's local background-work facilities. These functions do not send screenshot content or OCR text to a server. Notification delivery and background execution are subject to Android settings and operating-system behavior.</p>
         </section>
 
         <section>
-          <h2>Notifications</h2>
-          <p>ScreenshotMemory may use Android notifications to resurface a screenshot. Android controls whether notifications are allowed. You can change notification permission and notification settings through your device’s Android settings.</p>
+          <h2>Optional classification review export</h2>
+          <p>Settings includes a developer diagnostics area that can be unlocked by repeatedly tapping the app version. Its classification review export is not part of ordinary screenshot resurfacing. If someone explicitly uses that control, ScreenshotMemory can create a ZIP containing a sample of up to 100 screenshots (with a combined image-size limit of 20 MiB) and a metadata file. The metadata can include OCR text, filenames, media identifiers, dates, categories, and classification confidence. The export is offered through Android's Sharesheet only after the user starts the export, so the user can select the destination app. ScreenshotMemory does not choose that recipient or receive a copy back. The temporary export is stored in the app cache and stale exports are eligible for cleanup after 24 hours. The receiving app's own privacy practices apply after the user shares the archive.</p>
         </section>
 
         <section>
-          <h2>No account, ads, analytics, or sale of information</h2>
-          <ul>
-            <li>No account is required to use ScreenshotMemory.</li>
-            <li>ScreenshotMemory does not use advertising.</li>
-            <li>ScreenshotMemory does not use analytics or tracking SDKs.</li>
-            <li>ScreenshotMemory does not sell personal information.</li>
-          </ul>
+          <h2>Deletion and retention</h2>
+          <p>ScreenshotMemory keeps its local library and preferences while its app data remains on the device. You can remove local app data through Android's app storage controls or by uninstalling the app. Forgetting a memory only removes it from resurfacing; it does not delete the original image. The Library's delete action asks Android to delete the selected screenshot from the device media library and may require system confirmation. Temporary classification review exports are stored in the app cache and are eligible for cleanup after 24 hours.</p>
         </section>
 
         <section>
-          <h2>Your control and deletion</h2>
-          <p>You can manage ScreenshotMemory’s access and notifications in Android settings. You can remove screenshots from your device using your device’s usual media controls. Removing the app removes its locally stored app data through Android’s normal uninstall behavior; Android may provide additional options to clear app storage before uninstalling.</p>
-          <p>Because ScreenshotMemory does not use an account or cloud synchronization, there is no separate cloud account or cloud copy for you to delete.</p>
+          <h2>Sharing and third parties</h2>
+          <p>ScreenshotMemory does not include advertising, analytics, tracking, accounts, a ScreenshotMemory cloud service, or a push-notification backend. If you choose to share a classification review export, the destination app or service you select handles the shared copy under its own terms and privacy policy. This policy does not describe Android's own operating-system services or other apps on your device.</p>
         </section>
 
         <section>
-          <h2>Permissions: owner review required before publication</h2>
-          <p>The product architecture above is confirmed for this policy draft. The exact Android permissions declared by the release build, their Android-version behavior, and the final user-facing permission rationale must be confirmed by the owner before submitting this policy to Google Play.</p>
-          <div class="notice">
-            <strong>Review item:</strong> confirm the exact media/screenshot access permission(s), whether notification permission is requested, and whether any diagnostic or export feature exists. This policy intentionally makes no claim about diagnostics or exports until that behavior is confirmed.
-          </div>
-        </section>
-
-        <section>
-          <h2>Changes to this policy</h2>
-          <p>If ScreenshotMemory’s data practices change, this policy will be updated before or when the change takes effect. The current policy will be published at this page.</p>
-        </section>
-
-        <section>
-          <h2>Contact and support</h2>
-          <p>For help with ScreenshotMemory, visit the <a href="../support/">Support page</a>.</p>
-          <div class="notice">
-            <strong>Review item:</strong> a public support contact method has not yet been provided. Add an owner-approved contact method here and on the Support page before Google Play submission.
-          </div>
+          <h2>Changes and contact</h2>
+          <p>If this policy changes, the updated version will be published at this address with a revised update date. For privacy questions or support, contact <strong>R4V3N Development</strong> at <a href="mailto:r4v3n.development@gmail.com">r4v3n.development@gmail.com</a>.</p>
         </section>
       </article>
     </main>
