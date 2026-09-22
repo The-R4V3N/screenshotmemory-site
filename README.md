@@ -1,37 +1,69 @@
-# ScreenshotMemory website
+# ScreenshotMemory Site
 
-The official static public website for ScreenshotMemory. It provides a small product landing page plus the public Privacy Policy and Support URLs needed for the Google Play release.
+This repository contains the official public product website for ScreenshotMemory.
 
-This repository is intentionally plain HTML and CSS. There is no build system, package manager, analytics, cookies, or backend service.
+ScreenshotMemory is an Android-first app that discovers screenshots, understands their contents locally, and resurfaces them when they may be useful.
 
-## Structure
+## Live site
 
-- `index.html` — product landing page
-- `privacy/index.html` — canonical Privacy Policy path (`/privacy/`)
-- `support/index.html` — public Support path (`/support/`)
-- `styles.css` — shared responsive, light/dark-mode styles
-- `assets/` — approved product assets when they become available
+- [Product site](https://the-r4v3n.github.io/screenshotmemory-site/)
+- [Privacy Policy](https://the-r4v3n.github.io/screenshotmemory-site/privacy/)
+- [Support](https://the-r4v3n.github.io/screenshotmemory-site/support/)
 
-## GitHub Pages
+## About ScreenshotMemory
 
-After merging the desired branch into `master`, configure GitHub Pages to deploy from the `master` branch and the repository root (`/`). GitHub Pages will then serve the site without a build step.
+ScreenshotMemory is a focused screenshot organization and resurfacing utility rather than a generic gallery. Its core loop is:
 
-For a project site at `https://&lt;username&gt;.github.io/ScreenshotMemory-Site/`, the canonical policy URL is:
+Screenshot → Discover → Understand → Remember → Resurface → Act / Later / Forget
 
-`https://&lt;username&gt;.github.io/ScreenshotMemory-Site/privacy/`
+The product is local-first: OCR and classification run on-device, no ScreenshotMemory account is required, and ScreenshotMemory does not provide cloud synchronization, advertising, or analytics/tracking.
 
-All site links are relative, so they work under that repository path rather than requiring a domain-root deployment.
+## Site architecture
+
+The website deliberately uses:
+
+- Plain HTML and plain CSS
+- No framework or build system
+- No JavaScript requirement
+- No analytics/tracking or cookies
+- No backend
+- No external fonts or scripts
+
+The simplicity is intentional: GitHub Pages can serve the site directly with minimal maintenance.
+
+## Repository structure
+
+```text
+.
+├── index.html
+├── privacy/
+│   └── index.html
+├── support/
+│   └── index.html
+├── assets/
+│   ├── icon.png
+│   ├── favicon.png
+│   ├── apple-touch-icon.png
+│   └── screenshots/
+├── styles.css
+├── LICENSE
+└── README.md
+```
 
 ## Local preview
 
-Open `index.html` in a browser for a basic preview. To test directory URLs and navigation more closely, serve the repository with any local static-file server, for example from PowerShell:
+Serve the repository with Python's built-in static-file server:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000/`. No dependency installation is required.
+Then visit [http://localhost:8000/](http://localhost:8000/).
 
-## Content maintenance
+## Deployment
 
-Add only official, approved product assets when they are available.
+The site is deployed through GitHub Pages from the `master` branch at the repository root. No build step is required.
+
+## Support
+
+For privacy questions or product support, contact [r4v3n.development@gmail.com](mailto:r4v3n.development@gmail.com).
